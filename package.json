@@ -1,0 +1,23 @@
+{
+  "name": "galao",
+  "version": "0.0.1",
+  "description": "ActiveSupport-like core class extensions for Javascript",
+  "author": "Moritz Lawitschka <me@moritzlawitschka.de>",
+  "main": "lib/galao.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lawitschka/galao"
+  },
+  "bugs": {
+    "url": "https://github.com/lawitschka/galao/issues"
+  },
+  "keywords": [
+    "coffeescript",
+    "javascript",
+    "extension",
+    "activesupport",
+    "active",
+    "support"
+  ],
+  "license": "MIT"
+}
