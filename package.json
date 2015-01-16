@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "ActiveSupport-like core class extensions for Javascript/Coffeescript",
   "author": "Moritz Lawitschka <me@moritzlawitschka.de>",
+  "scripts": {
+    "prepublish": "coffee --bare --compile --output lib/ src/"
+  }
   "main": "lib/galao.js",
   "repository": {
     "type": "git",
