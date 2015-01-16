@@ -19,5 +19,8 @@
     "active",
     "support"
   ],
+  "devDependencies": {
+    "coffee-script": ">= 1.8.0"
+  },
   "license": "MIT"
 }
