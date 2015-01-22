@@ -23,6 +23,7 @@
     "support"
   ],
   "devDependencies": {
+    "browserify": "^8.1.1",
     "coffee-script": ">= 1.8.0"
   },
   "license": "MIT"
