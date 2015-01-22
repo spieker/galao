@@ -7,6 +7,37 @@ This project is work in progress and will grow in size continually when I feel
 the need to add certain functions. See "Contributing" if you miss any
 functionality, I'm always happy to merge your enhancements in!
 
+
+## Usage
+
+### Node.JS
+
+Simple require _galao_ in your application and it will be accessible from
+anywhere in your app:
+
+```
+require 'galao'
+```
+
+### Browser
+
+There is a browser version in the _lib_ directory. Download the file from Github
+or require locally from your _node_modules_ directory.
+
+**Caveats:** The browser treats numbers differently than Node.JS. A number
+directly followed by a dot is interpreted as a decimal number without a decimal
+value and thus results in an exception. To avoid this exception and still use
+the number functions, bracket the number:
+
+```coffeescript
+5.minutes()
+=> Exception
+
+(5).minutes()
+=> All good!
+```
+
+
 ## Methods
 
 ### Number::seconds()
@@ -63,7 +94,6 @@ coffee> "tesT".capitalize()
 ## Todo
 
 * Write tests
-* Add browser version
 * Add more functions
 
 ## Contributing
