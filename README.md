@@ -91,6 +91,17 @@ coffee> "tesT".capitalize()
 'TesT'
 ```
 
+### String::startsWith(prefix)
+
+Returns `true` if the string starts with the given prefix.
+
+```coffeescript
+coffee> "foo".startsWith 'f'
+true
+coffee> "foo".startsWith 'b'
+false
+```
+
 ## Todo
 
 * Write tests
