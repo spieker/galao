@@ -4,6 +4,9 @@ String::capitalize ?= ->
 String::startsWith ?= (prefix) ->
   @indexOf(prefix) is 0
 
+String::endsWith ?= (suffix) ->
+  @indexOf(suffix) is @length - suffix.length
+
 # source: http://coffeescript.org/documentation/docs/helpers.html
 String::repeat ?= (n) ->
   str = this
