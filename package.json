@@ -24,7 +24,11 @@
   ],
   "devDependencies": {
     "browserify": "^8.1.1",
-    "coffee-script": ">= 1.8.0"
+    "chai": "^1.10.0",
+    "coffee-script": ">= 1.8.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
   },
   "license": "MIT"
 }
