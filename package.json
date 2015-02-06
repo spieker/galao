@@ -4,7 +4,8 @@
   "description": "ActiveSupport-like core class extensions for Javascript/Coffeescript",
   "author": "Moritz Lawitschka <me@moritzlawitschka.de>",
   "scripts": {
-    "prepublish": "./bin/build.sh"
+    "prepublish": "./bin/build.sh",
+    "test": "mocha test/"
   },
   "main": "lib/galao.js",
   "repository": {
