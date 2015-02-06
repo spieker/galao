@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/npm/v/galao.svg)
+![Node version](https://img.shields.io/node/v/galao.svg)
+![Travis CI Build status](https://img.shields.io/travis/lawitschka/galao.svg)
+![Downloads](https://img.shields.io/npm/dm/galao.svg)
+![License](https://img.shields.io/npm/l/galao.svg)
+
 # Galao
 
 This Node.js package provides a ActiveSupport-flavoured Javascript core object
