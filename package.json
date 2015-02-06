@@ -31,5 +31,6 @@
     "sinon": "^1.12.2",
     "sinon-chai": "^2.6.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engine": "node >= 0.10.0"
 }
