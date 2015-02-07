@@ -1,4 +1,5 @@
 String::capitalize ?= ->
+  return '' unless @length > 0
   @[0].toUpperCase() + @[1..-1]
 
 String::startsWith ?= (prefix) ->
