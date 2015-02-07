@@ -1,18 +1,24 @@
 # Number to time conversions
 Number::second ?= ->
-  this * 1000
+  @seconds()
 
 Number::seconds ?= ->
   this * 1000
 
 Number::minute ?= ->
-  @seconds() * 60
+  @minutes()
 
 Number::minutes ?= ->
   @seconds() * 60
 
 Number::hour ?= ->
-  @minutes() * 60
+  @hours()
 
 Number::hours ?= ->
   @minutes() * 60
+
+Number::day ?= ->
+  @days()
+
+Number::days ?= ->
+  @hours() * 24

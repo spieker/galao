@@ -1,10 +1,11 @@
 {
   "name": "galao",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "ActiveSupport-like core class extensions for Javascript/Coffeescript",
   "author": "Moritz Lawitschka <me@moritzlawitschka.de>",
   "scripts": {
-    "prepublish": "./bin/build.sh"
+    "prepublish": "./bin/build.sh",
+    "test": "mocha test/"
   },
   "main": "lib/galao.js",
   "repository": {
@@ -24,7 +25,12 @@
   ],
   "devDependencies": {
     "browserify": "^8.1.1",
-    "coffee-script": ">= 1.8.0"
+    "chai": "^1.10.0",
+    "coffee-script": ">= 1.8.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.6.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engine": "node >= 0.10.0"
 }
