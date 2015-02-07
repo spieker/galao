@@ -137,11 +137,6 @@ coffee> "foo".repeat 2
 'foofoo'
 ```
 
-## Todo
-
-* Write tests
-* Add more functions
-
 ## Contributing
 
 Feel free to send me pull requests on Github, contributions are always welcome!
