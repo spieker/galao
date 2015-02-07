@@ -86,6 +86,15 @@ coffee> 2.hours()
 7200000
 ```
 
+### Number::days()
+
+Interpret given number as days and return value in milliseconds.
+
+```coffeescript
+coffee> 2.days()
+172800000
+```
+
 ### String::capitalize()
 
 Capitalize first letter in string, remaining letters will stay untouched.
@@ -106,6 +115,26 @@ coffee> "foo".startsWith 'f'
 true
 coffee> "foo".startsWith 'b'
 false
+```
+
+### String::endsWith(prefix)
+
+Returns `true` if the string ends with the given prefix.
+
+```coffeescript
+coffee> "foo".endsWith 'o'
+true
+coffee> "foo".endsWith 'f'
+false
+```
+
+### String::repeat(n)
+
+Repeats the string `n` times.
+
+```coffeescript
+coffee> "foo".repeat 2
+'foofoo'
 ```
 
 ## Todo
