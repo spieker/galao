@@ -1,8 +1,14 @@
-![Version](https://img.shields.io/npm/v/galao.svg)
+[![Version][version-img]][version-url]
 ![Node version](https://img.shields.io/node/v/galao.svg)
-![Travis CI Build status](https://img.shields.io/travis/lawitschka/galao.svg)
+[![Build Status][travis-img]][travis-url]
 ![Downloads](https://img.shields.io/npm/dm/galao.svg)
 ![License](https://img.shields.io/npm/l/galao.svg)
+
+<!-- Variables -->
+[version-img]: https://img.shields.io/npm/v/galao.svg
+[version-url]: https://www.npmjs.com/package/galao
+[travis-img]: https://img.shields.io/travis/lawitschka/galao.svg
+[travis-url]: https://travis-ci.org/lawitschka/galao
 
 # Galao
 
