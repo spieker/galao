@@ -106,6 +106,19 @@ coffee> "tesT".capitalize()
 'TesT'
 ```
 
+### String::dasherize()
+
+Replaces upper characters with a dash and the lower version of the character.
+
+```coffeescript
+coffee> 'fooBar'.dasherize()
+'foo-bar'
+coffee> 'Foo_bar'.dasherize()
+'-foo-bar'
+coffee> '__foo--bar'.dasherize()
+'-foo-bar'
+```
+
 ### String::startsWith(prefix)
 
 Returns `true` if the string starts with the given prefix.

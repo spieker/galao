@@ -17,3 +17,6 @@ String::repeat ?= (n) ->
     n >>>= 1
     str += str
   res
+
+String::dasherize ?= ->
+  @replace(/[-_\s]+/g, '-').replace(/([A-Z])/g, '-$1').toLowerCase()

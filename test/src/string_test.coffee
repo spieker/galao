@@ -23,6 +23,9 @@ describe 'String', ->
   it 'responds to repeat()', ->
     expect(@string).to.respondTo 'repeat'
 
+  it 'responds to dasherize()', ->
+    expect(@string).to.respondTo 'dasherize'
+
 
   #########################################################
   # Method tests
@@ -83,3 +86,20 @@ describe 'String', ->
     it 'should not do anything for an empty string', ->
       @string = ''
       expect(@string.repeat(2)).to.equal ''
+
+  describe '::dasherize()', ->
+    it 'replaces underscores with one dash', ->
+      @string = 'test__string'
+      expect(@string.dasherize()).to.equal 'test-string'
+
+    it 'replaces multiple dashes with one dash', ->
+      @string = 'test--string'
+      expect(@string.dasherize()).to.equal 'test-string'
+
+    it 'replaces cammel case with dash and lower case', ->
+      @string = 'testString'
+      expect(@string.dasherize()).to.equal 'test-string'
+
+    it 'replaces a leading upper case character with a dash', ->
+      @string = 'TestString'
+      expect(@string.dasherize()).to.equal '-test-string'
