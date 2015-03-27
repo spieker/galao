@@ -52,6 +52,17 @@ the number functions, bracket the number:
 
 ## Methods
 
+### Array::compact()
+
+Returns a new array without any _null_ or _undefined_ elements.
+
+```coffeescript
+coffee> [1, 2, 3, null].compact()
+[ 1, 2, 3 ]
+coffee> [1, 2, 3, undefined].compact()
+[ 1, 2, 3 ]
+```
+
 ### Number::seconds()
 
 Interpret given number as seconds and return value in milliseconds.
