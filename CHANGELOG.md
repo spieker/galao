@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+* Add `Array::compact`
+
 ## 1.0.0
 
 * Add `Number::days` and `Number::day`
