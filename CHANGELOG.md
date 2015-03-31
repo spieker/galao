@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+* Fix Array extensions not being automatically loaded
+
 ## 1.0.1
 
 * Add `Array::compact`
