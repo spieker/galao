@@ -24,7 +24,7 @@ Number::days ?= ->
   @hours() * 24
 
 Number::even ?= ->
-  this%2==0
+  this % 2 == 0
 
 Number::odd ?= ->
   not @even()
