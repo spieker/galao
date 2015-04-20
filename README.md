@@ -112,6 +112,28 @@ coffee> 2.days()
 172800000
 ```
 
+### Number::even()
+
+Checks whether the number is even or not.
+
+```coffeescript
+coffee> 5.even()
+false
+coffee> 6.even()
+true
+```
+
+### Number::odd()
+
+Checks whether the number is odd or not.
+
+```coffeescript
+coffee> 5.odd()
+true
+coffee> 6.odd()
+false
+```
+
 ### String::capitalize()
 
 Capitalize first letter in string, remaining letters will stay untouched.

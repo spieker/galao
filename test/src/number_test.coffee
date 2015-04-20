@@ -35,6 +35,12 @@ describe 'Number', ->
   it 'responds to days()', ->
     expect(@number).to.respondTo 'days'
 
+  it 'responds to even()', ->
+    expect(@number).to.respondTo 'even'
+
+  it 'responds to odd()', ->
+    expect(@number).to.respondTo 'odd'
+
 
   #########################################################
   # Method tests
@@ -94,3 +100,38 @@ describe 'Number', ->
 
     it 'multiplies number value in hours by 24', ->
       expect(@number.days()).to.be.equal @number.hours() * 24
+
+  describe '::even()', ->
+    it 'is true if the number is 0', ->
+      @number = 0
+      expect(@number.even()).to.be.equal true
+
+    it 'is true if the number is even and positive', ->
+      @number = 8
+      expect(@number.even()).to.be.equal true
+
+    it 'is true if the number is even and negative', ->
+      @number = -10
+      expect(@number.even()).to.be.equal true
+
+    it 'is false if the number is odd', ->
+      @number = 5
+      expect(@number.even()).to.be.equal false
+
+    it 'is false if the number is odd and negative', ->
+      @number = -21
+      expect(@number.even()).to.be.equal false
+
+  describe '::odd()', ->
+    it 'reuses the even method', ->
+      spy = sinon.spy Number::, 'even'
+      @number.odd()
+      expect(spy).to.be.called
+
+    it 'is false if the number is even', ->
+      @number = 8
+      expect(@number.odd()).to.be.equal false
+
+    it 'is true if the number is odd', ->
+      @number = 5
+      expect(@number.odd()).to.be.equal true
