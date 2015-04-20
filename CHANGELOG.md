@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3
+
+* Add `Number::odd`
+* Add `Number::even`
+
 ## 1.0.2
 
 * Fix Array extensions not being automatically loaded
