@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+* Add `Array::intersection`
+
 ## 1.0.3
 
 * Add `Number::odd`
