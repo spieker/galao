@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+* Add `Array::find`
+
 ## 1.0.4
 
 * Add `Array::intersection`

@@ -62,3 +62,19 @@ describe 'Array', ->
     it 'does not include elements which are only in passed array', ->
       intersection = @array.intersection @otherArray
       expect(4 in intersection).to.be.false
+
+  describe '::find()', ->
+    beforeEach ->
+      @array = [{ foo: 1 }, { foo: 2 }, { foo: 3 }, { foo: 2 }]
+
+    it 'returns the matching element', ->
+      result = @array.find (element, index, array) -> element.foo == 2
+      expect(result).to.equal @array[1]
+
+    it 'returns null if no element was found', ->
+      result = @array.find (element, index, array) -> element.foo == 5
+      expect(result).to.be.null
+
+    it 'returns the first matching element', ->
+      result = @array.find (element, index, array) -> element.foo == 2
+      expect(result).not.to.equal @array[3]

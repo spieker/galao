@@ -63,6 +63,17 @@ coffee> [1, 2, 3, undefined].compact()
 [ 1, 2, 3 ]
 ```
 
+### Array::find()
+
+Returns the first element of the array matching the callback condition.
+
+```coffeescript
+coffee> [{foo:1}, {foo:2}, {foo:3}].find (elem, index, array) -> elem.foo==2
+{ foo: 2 }
+coffee> [{foo:1}, {foo:2}, {foo:3}].find (elem, index, array) -> elem.foo==20
+null
+```
+
 ### Number::seconds()
 
 Interpret given number as seconds and return value in milliseconds.
