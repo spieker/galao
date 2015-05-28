@@ -14,3 +14,8 @@ Array::intersection ?= (other) ->
   hashMap[i] = 1 for i in a1
 
   return (i for i in a2 when hashMap[i] and hashMap[i] == 1)
+
+Array::find ?= (callback) ->
+  for element, index in this
+    return element if callback(element, index, this)
+  null

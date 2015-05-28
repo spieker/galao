@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - iojs
-  - iojs-v1.0.2
+- '0.12'
+- '0.11'
+- '0.10'
+- iojs
+- iojs-v1.0.2
+deploy:
+  provider: npm
+  email: me@moritzlawitschka.de
+  api_key:
+    secure: E/O+pDUvUjG/iRNQYQNabBxuR0lhLmIaKS0gYMVeGBVlKdawVdAry3HSAEVe4Fjvsy5YBRRWtMwpJFPoNQ1xdRadDSm04IhHVO/mIAA1Tut85HsJoNhBsAEKDlA30AkGt9W+M9zgKCBSYacV/0vj5oYUKimioD0Q4LgQrrjOAZ0=
+  on:
+    tags: true
+    repo: lawitschka/galao
